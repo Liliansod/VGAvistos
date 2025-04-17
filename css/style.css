@@ -1,0 +1,167 @@
+:root {
+    --main-color:#d92123;
+    --primary-text-color:#fff;
+    --secondary-text-color:#191919;
+    --secondary-color:#868686;
+    --tertiary-color:#eff3f4;
+    --secondary-bg-color:#5c1011;
+}
+
+* {
+    font-family: "Lato";
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*****************Cabeçalho e banner**********/
+#header{
+    min-height: 90vh;
+    background-image: url("/img/capa_principal.png");
+    background-size: cover;
+    background-position: center;
+    color: var(--primary-text-color);
+    margin-bottom: 2rem;
+}
+
+#header__banner{}
+
+#header #header__banner .header__logo{}
+
+#header #header__banner .navebar{}
+
+#header #header__banner .header__texto__principal{}
+
+#header #header__banner .btn{}
+
+
+/**************Quem somos************/
+#information{}
+
+
+/*Div1*/
+#information .information__text1 .information__titulo1{}
+
+#information .information__text1 .information__descricao1{}
+
+
+/*Div2*/
+#information .information__text2 .information__titulo2{}
+
+#information .information__text2 .information__descricao2{}
+
+
+/*Div3*/
+#information .information__text3 .information__titulo3{}
+
+#information .information__text3 .information__descricao3{}
+
+
+/*************Leberdade para viajar*********/
+#message{}
+
+#message .message__principal{}
+
+#message .message__principal .message__title{}
+
+#message .message__principal .message__subTitle{}
+
+#message .btn__faleConosco{}
+
+
+/*************Planos*************/
+#plans__div {}
+#plans__div #plans{}
+
+/*Div1*/
+#plans__div #plans .plans__principal{}
+
+#plans__div #plans .plans__principal .plans__title1{}
+
+#plans__div #plans .plans__principal .plans__text1{}
+
+
+/*Div2*/
+#plans__div #plans .plans__primeiroPasso{}
+
+#plans__div #plans .plans__primeiroPasso .plans__title2{}
+
+#plans__div #plans .plans__primeiroPasso .plans__text2{}
+
+#plans__div #plans .plans__primeiroPasso .plans__text2_1{}
+
+#plans__div #plans .plans__primeiroPasso .plans__text2_2{}
+
+
+/*Div3*/
+#plans__div #plans .plans__segundoPasso{}
+
+#plans__div  #plans .plans__segundoPasso .plans__title3{}
+
+#plans__div  #plans .plans__segundoPasso .plans__text3{}
+
+#plans__div  #plans .plans__segundoPasso .plans__text3_1{}
+
+#plans__div  #plans .plans__segundoPasso .plans__text3_2{}
+
+
+/************Carrossel de Planos***********/
+
+#plans__div #plans__carrossel{}
+
+#plans__div #plans__carrossel .btn__carrossel{}
+
+/*Div1*/
+#plans__div #plans__carrossel .carrossel__1{}
+
+#plans__div #plans__carrossel .carrossel__1 .carrossel__title1{}
+
+#plans__div #plans__carrossel .carrossel__1 .carrossel__subTitle1{}
+
+#plans__div #plans__carrossel .carrossel__1 .carrossel__title1_1{}
+
+#plans__div #plans__carrossel .carrossel__1 .saibaMais{}
+
+/*Div2*/
+#plans__div #plans__carrossel .carrossel__2{}
+
+#plans__div #plans__carrossel .carrossel__2 .carrossel__title2{}
+
+#plans__div #plans__carrossel .carrossel__2 .carrossel__subTitle2{}
+
+#plans__div #plans__carrossel .carrossel__2 .carrossel__title2_1{}
+
+#plans__div #plans__carrossel .carrossel__2 .saibaMais{}
+
+/*Div3*/
+#plans__div #plans__carrossel .carrossel__3{}
+
+#plans__div #plans__carrossel .carrossel__3 .carrossel__title3{}
+
+#plans__div #plans__carrossel .carrossel__3 .carrossel__subTitle3{}
+
+#plans__div #plans__carrossel .carrossel__3 .carrossel__title3_1{}
+
+#plans__div #plans__carrossel .carrossel__3 .saibaMais{}
+
+/*Div4*/
+#plans__div #plans__carrossel .carrossel__4{}
+
+#plans__div #plans__carrossel .carrossel__4 .carrossel__title4{}
+
+#plans__div #plans__carrossel .carrossel__4 .carrossel__subTitle4{}
+
+#plans__div #plans__carrossel .carrossel__4 .carrossel__title4_1{}
+
+#plans__div #plans__carrossel .carrossel__4 .saibaMais{}
+
+/*Div5*/
+
+
+
+
+/*************Carrossel de Depoimentos***********/
+
+/**************Carrossel de Serviços*************/
+
+/*****************Rodapé******************/
