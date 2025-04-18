@@ -1,10 +1,10 @@
 :root {
-    --main-color:#d92123;
-    --primary-text-color:#fff;
-    --secondary-text-color:#191919;
-    --secondary-color:#868686;
-    --tertiary-color:#eff3f4;
-    --secondary-bg-color:#5c1011;
+    --main-color:#E4FFEE;
+    --primary-text-color:#000000;
+    --secondary-text-color:#FFFFFF;
+    --secondary-color:#84BDD9;
+    --tertiary-color:#407B98;
+    --secondary-bg-color:#257293;
 }
 
 * {
@@ -14,25 +14,71 @@
     box-sizing: border-box;
 }
 
-/*****************Cabeçalho e banner**********/
-#header{
-    min-height: 90vh;
-    background-image: url("/img/capa_principal.png");
-    background-size: cover;
-    background-position: center;
-    color: var(--primary-text-color);
-    margin-bottom: 2rem;
+.body{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-color);
+
 }
 
-#header__banner{}
 
-#header #header__banner .header__logo{}
+/*****************Cabeçalho e banner**********/
+#header{
+    display: flex;
+    min-height: 70vh;
+    width: 100%;
+    background-image: url("/VGAvistos/img/capa_principal.png");
+    background-size: cover;
+    background-position: center;
+    height: 550.81px;
+    flex-direction: column;
+}
 
-#header #header__banner .navebar{}
+#header__banner{
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    margin: 50px 50px 50px 150px;
+}
 
-#header #header__banner .header__texto__principal{}
+#header #header__banner .header__logo{
+    display: flex;
 
-#header #header__banner .btn{}
+}
+
+#header #header__banner .navebar{
+    display: flex;
+    margin: 0px 0px auto auto;
+    gap: 2rem;
+    text-transform: uppercase;
+    margin-right: 2rem;
+    color: var(--primary-text-color);
+    padding: 1rem;
+
+}
+
+#header__texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    margin: 80px 80px 80px 80px;
+}
+
+#header #header__texto .header__texto__principal{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#header #header__texto .header__texto__principal .header__title{}
+
+#header #header__texto .header__texto__principal .header__sub_title{}
+
+#header #header__texto .btn{
+    margin-top: 100px;
+}
 
 
 /**************Quem somos************/
@@ -156,12 +202,124 @@
 #plans__div #plans__carrossel .carrossel__4 .saibaMais{}
 
 /*Div5*/
+#plans__div #plans__carrossel .carrossel__5{}
 
+#plans__div #plans__carrossel .carrossel__5 .carrossel__title5{}
 
+#plans__div #plans__carrossel .carrossel__5 .carrossel__subTitle5{}
+
+#plans__div #plans__carrossel .carrossel__5 .carrossel__title5_1{}
+
+#plans__div #plans__carrossel .carrossel__5 .saibaMais{}
+
+/*Div6*/
+#plans__div #plans__carrossel .carrossel__6{}
+
+#plans__div #plans__carrossel .carrossel__6 .carrossel__title6{}
+
+#plans__div #plans__carrossel .carrossel__6 .carrossel__subTitle6{}
+
+#plans__div #plans__carrossel .carrossel__6 .carrossel__title6_1{}
+
+#plans__div #plans__carrossel .carrossel__6 .saibaMais{}
+
+/*Div7*/
+#plans__div #plans__carrossel .carrossel__7{}
+
+#plans__div #plans__carrossel .carrossel__7 .carrossel__title7{}
+
+#plans__div #plans__carrossel .carrossel__7 .carrossel__subTitle7{}
+
+#plans__div #plans__carrossel .carrossel__7 .carrossel__title7_1{}
+
+#plans__div #plans__carrossel .carrossel__7 .saibaMais{}
+
+/*Div8*/
+#plans__div #plans__carrossel .carrossel__8{}
+
+#plans__div #plans__carrossel .carrossel__8 .carrossel__title8{}
+
+#plans__div #plans__carrossel .carrossel__8 .carrossel__subTitle8{}
+
+#plans__div #plans__carrossel .carrossel__8 .carrossel__title8_1{}
+
+#plans__div #plans__carrossel .carrossel__8 .saibaMais{}
 
 
 /*************Carrossel de Depoimentos***********/
+#testimonials{}
+
+/*Div1*/
+#testimonials .testimonials__img1{}
+
+/*Div2*/
+#testimonials .testimonials__img2{}
+
+/*Div3*/
+#testimonials .testimonials__img3{}
+
+/*Div4*/
+#testimonials .testimonials__img4{}
+
+/*Div5*/
+#testimonials .testimonials__img5{}
+
+/*Div6*/
+#testimonials .testimonials__img6{}
+
+/*Div7*/
+#testimonials .testimonials__img7{}
+
+/*Div8*/
+#testimonials .testimonials__img8{}
+
 
 /**************Carrossel de Serviços*************/
+#services{}
+
+/*Dev1*/
+#services .services__1{}
+
+/*Dev2*/
+#services .services__2{}
+
+/*Dev3*/
+#services .services__3{}
+
+/*Dev4*/
+#services .services__4{}
+
+/*Dev5*/
+#services .services__5{}
+
+/*Dev6*/
+#services .services__6{}
+
+/*Dev7*/
+#services .services__7{}
+
+/*Dev8*/
+#services .services__8{}
+
+/*BTN - Fale conosco*/
+#services .btn__faleConosco{}
+
 
 /*****************Rodapé******************/
+#contact{}
+
+/*Div1*/
+#contact .contact__logo{}
+
+#contact .contact__logo .logo__rodape{}
+
+/*Div2*/
+#contact .atendimento{}
+
+/*Div3*/
+#contact .funcionamento{}
+
+/*Div4*/
+#contact .logo__rodape{}
+
+#contact .logo__rodape .logo__rodape__img{}
