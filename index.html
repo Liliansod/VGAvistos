@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VGA Vistos</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/Script.js"></script>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,7 +41,10 @@
             <div class="btn">
                 <!-- Icone whatsapp -->
                 <i></i>
-                <button class="btn_faleConosco">Fale conosco</button>
+                <button class="btn_faleConosco">
+                    <img src="./img/whats.png" alt="WhatsApp" class="whatsapp-icon">
+                    Fale conosco
+                </button>
             </div>
         </div>
     </section>
@@ -76,41 +80,48 @@
     <!-- Liberdade para viajar -->
     <section id="message">
         <div class="message__principal">
-            <p class="message__title">Liberdade para viajar,segurança para sonhar:</p>
+            <p class="message__title">Liberdade para viajar, segurança para sonhar:</p>
             <p class="message__subTitle">Vistos com confiança!</p>
         </div>
-        <button class="btn__faleConosco">Fale conosco</button>
+        <button class="btn_faleConosco">
+            <img src="./img/whats.png" alt="WhatsApp" class="whatsapp-icon">
+            Fale conosco
+        </button>
     </section>
 
     <!-- Planos -->
-   <section id="plans__div">
-        <section id="plans">
-            <div class="plans__principal">
-                <p class="plans__title1">Planos</p>
-                <p class="plans__text1">Conheça agora nossos serviços e descubra como
-                    podemos ajudá-lo a realizar seu sonho de viagem!</p>
+    <section id="plans">
+        <section class="plans__div">
+            <div class="plans__principal__1">
+                <div class="plans__principal">
+                    <p class="plans__title1">Planos</p>
+                    <p class="plans__text1">Conheça agora nossos serviços e descubra como
+                        podemos ajudá-lo a realizar seu sonho de viagem!</p>
+                </div>
             </div>
-            <div class="plans__primeiroPasso">
-                <p class="plans__title2">Primeiro passo: Passaporte</p>
-                <p class="plans__text2">Antes de tudo é necessário possuir um passaporte válido. 
-                    Caso ainda não o tenha ou se o seu passaporte tem validade 
-                    inferior há 6 meses, aconselhamos emitir um novo.</p>
-                <p class="plans__text2_1">Passaporte: R$110,00</p>
-                <p class="plans__text2_2">Não inclui taxa de emissão</p>
-            </div>
-            <div class="plans__segundoPasso">
-                <p class="plans__title3">Segundo passo: Visto</p>
-                <p class="plans__text3">Com o passaporte ok, agora é a hora de reunir os seus
-                    documentos e algumas informações para entrar com o pedido do seu visto.</p>
-                <p class="plans__text3_1">Valores por pessoa:</p>
-                <p class="plans__text3_2">Valores referente a taxa consular, 
-                    envio e devolução de passaporte são cobrados a parte</p>
+            <div class="plans__divs">
+                <div class="plans__primeiroPasso__2">
+                    <p class="plans__title2">Primeiro passo: Passaporte</p>
+                    <p class="plans__text2">Antes de tudo é necessário possuir um passaporte válido. 
+                        Caso ainda não o tenha ou se o seu passaporte tem validade 
+                        inferior há 6 meses, aconselhamos emitir um novo.</p>
+                    <p class="plans__text2_1">Passaporte: R$110,00</p>
+                    <p class="plans__text2_2">Não inclui taxa de emissão</p>
+                </div>
+                <div class="plans__segundoPasso">
+                    <p class="plans__title3">Segundo passo: Visto</p>
+                    <p class="plans__text3">Com o passaporte ok, agora é a hora de reunir os seus
+                        documentos e algumas informações para entrar com o pedido do seu visto.</p>
+                    <p class="plans__text3_1">Valores por pessoa:</p>
+                    <p class="plans__text3_2">Valores referente a taxa consular, 
+                        envio e devolução de passaporte são cobrados a parte</p>
+                </div>
             </div>
         </section>
 
         <!-- Carrossel de Planos -->
         <section id="plans__carrossel">
-            <button class="btn__carrossel">seta para lado</button>
+            <button class="btn__carrossel"> </button>
 
             <div class="carrossel__1">
                 <p class="carrossel__title1">Visto de Turismo <i>✈️</i></p>
@@ -168,7 +179,7 @@
                     Seja para cursos de curta duração ou graduações, o visto de estudante 
                     é essencial para sua nova jornada acadêmica.
                 </p>
-                <ul class="carrossel__subTitle4.1">
+                <ul class="carrossel__subTitle4_1">
                     <p>Quer saber mais?</p>
                     <li>Suporte especializado 
                         em diversos tipos e categorias de vistos
@@ -183,7 +194,7 @@
                 <p class="carrossel__subTitle5">Se você deseja viver uma experiência cultural e 
                     trabalhar como Au Pair nos EUA, ajudamos com toda a documentação para sua viagem.
                 </p>
-                <ul class="carrossel__subTitle5.1">
+                <ul class="carrossel__subTitle5_1">
                     <p>Quer saber mais?</p>
                     <li>Suporte especializado 
                         em diversos tipos e categorias de vistos
@@ -198,7 +209,7 @@
                 <p class="carrossel__subTitle6">Se você deseja buscar novas oportunidades em Portugal, 
                     podemos te ajudar a emitir seu visto de procura de trabalho.
                 </p>
-                <ul class="carrossel__subTitle6.1">
+                <ul class="carrossel__subTitle6_1">
                     <p>Quer saber mais?</p>
                     <li>Suporte especializado 
                         em diversos tipos e categorias de vistos
@@ -214,7 +225,7 @@
                 <p class="carrossel__subTitle7">As datas disponíveis para sua entrevista consular não te atendem? 
                     Podemos ajudar a antecipar seu agendamento e agilizar seu processo.
                 </p>
-                <ul class="carrossel__subTitle7.1">
+                <ul class="carrossel__subTitle7_1">
                     <p>Quer saber mais?</p>
                     <li>Suporte especializado 
                         em diversos tipos e categorias de vistos
@@ -228,13 +239,13 @@
                 <p class="carrossel__subTitle8">Você está planejando uma viagem ao Brasil? 
                     Se você é um cidadão americano, canadense ou australiano, você precisará de um visto. 
                     Nós podemos ajudar na emissão desse documento. 
-                    Vamos cuidar de toda parte burocrática para você.
-                </p>
-                <p class="carrossel__subTitle8__ingles">Are you planning a trip to Brazil? 
+                    Vamos cuidar de toda parte burocrática para você. <br/><br/>
+                    Are you planning a trip to Brazil? 
                     If you are an American, Canadian or Australian citizen, you will need a visa. 
                     We can help you issue this document. 
-                    We'll take care of all the paperwork for you.</p>
-                <ul class="carrossel__subTitle8.1">
+                    We'll take care of all the paperwork for you
+                </p>
+                <ul class="carrossel__subTitle8_1">
                     <p>Quer saber mais?</p>
                     <li>Suporte especializado 
                         em diversos tipos e categorias de vistos
@@ -244,13 +255,20 @@
             </div>
 
 
-            <button class="btn__carrossel">seta para lado</button>
+            <button class="btn__carrossel">  </button>
         </section>
 
    </section>
 
     <!-- Carrossel de Depoimentos -->
+    <div class="plans__principal__1">
+        <div class="plans__principal">
+            <p class="plans__title1">Depoimentos</p>
+    </div>
     <section id="testimonials">
+
+        <button class="btn__carrossel"> </button>
+
         <div class="testimonials__img1">
             <img class="dp1" src="./img/Depoimento1.png" alt="dp1">
         </div>
@@ -282,13 +300,24 @@
         <div class="testimonials__img8">
             <img class="dp8" src="./img/Depoimento8.png" alt="dp8">
         </div>
+
+        <button class="btn__carrossel"> </button>
     </section>
 
     <!-- Carrossel de Serviços -->
+    <div class="plans__principal__1">
+        <div class="plans__principal">
+            <p class="plans__title1">Serviços</p>
+    </div>
     <section id="services">
+
+
+        <button class="btn__carrossel"> </button>
+
         <div class="services__1">
             <ul>
                 <p><strong>Turismo</strong></p>
+                <br/> <br/><br/>
                 <li>Estados Unidos – R$400,00</li>
                 <li>Canadá - R$450,00</li>
                 <li>Austrália - R$450,00</li>
@@ -297,12 +326,16 @@
                 <li>México - R$350,00</li>
                 <li>China – R$500,00</li>
             </ul>
-            <button class="btn__faleConosco">Fale conosco</button>
+            <button class="btn_faleConosco">
+                <img src="./img/whats.png" alt="WhatsApp" class="whatsapp-icon">
+                Fale conosco
+            </button>
         </div>
 
         <div class="services__2">
             <ul>
                 <p><strong>ETA/ESTA - Autorização Eletrônica</strong></p>
+                <br/> <br/>
                 <li>Estados Unidos – R$230,00</li>
                 <li>Canadá - R$230,00</li>
                 <li>Nova Zelândia – R$230,00</li>
@@ -311,61 +344,90 @@
                 <li>Singapura – R$230,00</li>
                 <li>Reino Unido – R$230,00</li>
             </ul>
-            <button class="btn_faleConosco">Fale conosco</button>
+            <button class="btn_faleConosco">
+                <img src="./img/whats.png" alt="WhatsApp" class="whatsapp-icon">
+                Fale conosco
+            </button>
         </div>
 
         <div class="services__3">
             <ul>
                 <p><strong>Visto de Trabalho</strong></p>
+                <br/> <br/><br/><br/>
                 <li>Austrália - R$450,00</li>
                 <li>Canadá - R$450,00</li>
                 <li>Estados Unidos – R$450,00</li>
             </ul>
-            <button class="btn_faleConosco">Fale conosco</button>
+            <button class="btn_faleConosco">
+                <img src="./img/whats.png" alt="WhatsApp" class="whatsapp-icon">
+                Fale conosco
+            </button>
         </div>
 
         <div class="services__4">
             <ul>
                 <p><strong>Visto de Estudos</strong></p>
+                <br/> <br/><br/><br/>
                 <li>Austrália - R$450,00</li>
                 <li>Canadá - R$450,00</li>
                 <li>Estados Unidos – R$450,00</li>
             </ul>
-            <button class="btn_faleConosco">Fale conosco</button>
+                            <button class="btn_faleConosco">
+                    <img src="./img/whats.png" alt="WhatsApp" class="whatsapp-icon">
+                    Fale conosco
+                </button>
         </div>
 
         <div class="services__5">
             <ul>
                 <p><strong>Visto de Au Pair</strong></p>
+                <br/> <br/><br/><br/>
                 <li>Estados Unidos – R$400,00</li>
             </ul>
-            <button class="btn_faleConosco">Fale conosco</button>
+                            <button class="btn_faleConosco">
+                    <img src="./img/whats.png" alt="WhatsApp" class="whatsapp-icon">
+                    Fale conosco
+                </button>
         </div>
 
         <div class="services__6">
             <ul>
                 <p><strong>Visto de Procura de Trabalho</strong></p>
+                <br/> <br/><br/><br/>
                 <li>Portugal – R$450,00</li>
             </ul>
-            <button class="btn_faleConosco">Fale conosco</button>
+                            <button class="btn_faleConosco">
+                    <img src="./img/whats.png" alt="WhatsApp" class="whatsapp-icon">
+                    Fale conosco
+                </button>
         </div>
 
         <div class="services__7">
             <ul>
                 <p><strong>Visto de Trabalho</strong></p>
+                <br/> <br/><br/><br/>
                 <li>R$400,00 – Contratando com a assessoria de visto</li>
                 <li>R$300,00 – Sem assessoria de visto</li>
             </ul>
-            <button class="btn_faleConosco">Fale conosco</button>
+                            <button class="btn_faleConosco">
+                    <img src="./img/whats.png" alt="WhatsApp" class="whatsapp-icon">
+                    Fale conosco
+                </button>
         </div>
 
         <div class="services__8">
             <ul>
                 <p><strong>Visto Brasileiro</strong></p>
+                <br/> <br/><br/><br/>
                 <li>Visto Brasileiro – R$500,00</li>
             </ul>
-            <button class="btn_faleConosco">Fale conosco</button>
+                            <button class="btn_faleConosco">
+                    <img src="./img/whats.png" alt="WhatsApp" class="whatsapp-icon">
+                    Fale conosco
+                </button>
         </div>
+
+        <button class="btn__carrossel">  </button>
 
     </section>
 
@@ -380,7 +442,10 @@
             <p>Contato: 19 99761-4391<br/>
                 E-mail: contato@vgavistos.com <br/>
                 Instagram: @VGAvistos</p>
-            <button class="btn__faleConosco">Fale conosco</button>
+            <button class="btn_faleConosco">
+                <img src="./img/whats.png" alt="WhatsApp" class="whatsapp-icon">
+                Fale conosco
+            </button>
         </div>
 
         <div class="funcionamento">
@@ -395,6 +460,12 @@
 
         <div class="logo__rodape">
             <img class="logo__rodape__img" src="./img/rodape.png" alt="img__rodape__img">
+        </div>
+    </section>
+
+    <section class="rodape__final">
+        <div class="rodape__final__text">
+            <p>Desenvolvido Simplifica Tech</p>
         </div>
     </section>
 
