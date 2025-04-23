@@ -127,7 +127,6 @@
 }
 
 .information__text1, .information__text2, .information__text3 {
-    background-color: var(--secondary-text-color);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -231,7 +230,7 @@
 }
 
 .plans__primeiroPasso__2, .plans__segundoPasso {
-    background-color: var(--secondary-text-color);
+
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
