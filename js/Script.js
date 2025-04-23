@@ -1,5 +1,5 @@
 // Script para controle dos carrosséis
-document.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('load', function() {
     // Configuração dos carrosséis com CSS scroll
     setupCarouselCSS('plans__carrossel');
     setupCarouselCSS('testimonials');
@@ -20,24 +20,14 @@ function setupCarouselCSS(carouselId) {
     const items = Array.from(carousel.children).filter(item => 
         !item.classList.contains('btn__carrossel')
     );
+
     
     const itemWidth = 320; // Largura do item + gap
     const scrollAmount = itemWidth;
     
-    // Remover botões existentes do carrossel
-    const existingPrevBtn = carousel.querySelector('.btn__carrossel:first-child');
-    const existingNextBtn = carousel.querySelector('.btn__carrossel:last-child');
-    
-    if (existingPrevBtn) {
-        carousel.removeChild(existingPrevBtn);
-    }
-    
-    if (existingNextBtn) {
-        carousel.removeChild(existingNextBtn);
-    }
-    
     // Criar botões fora do carrossel
     const prevBtn = document.createElement('button');
+    prevBtn.innerHTML = '&lt;'; // Símbolo < explícito
     prevBtn.className = 'btn__carrossel';
     prevBtn.setAttribute('aria-label', 'Anterior');
     prevBtn.style.position = 'absolute';
@@ -45,6 +35,7 @@ function setupCarouselCSS(carouselId) {
     prevBtn.style.zIndex = '100';
     
     const nextBtn = document.createElement('button');
+    nextBtn.innerHTML = '&gt;'; // Símbolo < explícito
     nextBtn.className = 'btn__carrossel';
     nextBtn.setAttribute('aria-label', 'Próximo');
     nextBtn.style.position = 'absolute';
@@ -55,7 +46,8 @@ function setupCarouselCSS(carouselId) {
     const carouselContainer = document.createElement('div');
     carouselContainer.style.position = 'relative';
     carouselContainer.style.width = '100%';
-    
+    carouselContainer.classList.add(`${carouselId}__wrapper`);    
+
     // Mover o carrossel para dentro do container
     carousel.parentNode.insertBefore(carouselContainer, carousel);
     carouselContainer.appendChild(carousel);

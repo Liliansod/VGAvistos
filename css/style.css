@@ -261,6 +261,32 @@
 }
 
 /* Carrossel de Planos */
+.carrossel__wrapper {
+    padding: 0 0px; /* Ou o mesmo padding lateral usado em outras seções */
+    position: relative;
+}
+#plans__carrossel__wrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 0 60px;
+}
+
+#plans__carrossel__wrapper .btn__carrossel {
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+
+#plans__carrossel__wrapper .btn__carrossel[aria-label="Anterior"] {
+    left: -20px; /* fora da div */
+}
+
+#plans__carrossel__wrapper .btn__carrossel[aria-label="Próximo"] {
+    right: -20px; /* fora da div */
+}
+
+
 #plans__carrossel {
     display: flex;
     align-items: center;
@@ -270,7 +296,7 @@
     scroll-behavior: smooth;
     scrollbar-width: none; /* Firefox */
     gap: 20px;
-    padding: 20px 0;
+    /* padding: 20px 0; */
 }
 
 #plans__carrossel::-webkit-scrollbar {
@@ -293,14 +319,6 @@
     cursor: pointer;
     z-index: 10;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.btn__carrossel:first-child {
-    left: 10px;
-}
-
-.btn__carrossel:last-child {
-    right: 10px;
 }
 
 .carrossel__1, .carrossel__2, .carrossel__3, .carrossel__4,
@@ -435,7 +453,7 @@
     scroll-behavior: smooth;
     scrollbar-width: none;
     gap: 20px;
-    padding: 50px 0;
+    padding: 90px 0;
     margin: 0 auto;
     max-width: 1200px;
 }
@@ -454,7 +472,7 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    height: 380px;
+    height: 290px;
 }
 
 .services__1 ul, .services__2 ul, .services__3 ul, .services__4 ul,
@@ -522,9 +540,20 @@
     font-family: 'Inknut Antiqua', serif; /* Aplicando fonte Inknut Antiqua */
 }
 
-.logo__rodape__img {
-    max-width: 100%;
-    height: auto;
+.rodape__img__container {
+    position: relative;
+    width: 100%;
+    height: 150px; /* Ajuste conforme a altura da imagem */
+    margin-top: -75px; /* Metade da altura para sobrepor ao section anterior */
+    margin-bottom: -75px; /* Metade da altura para sobrepor ao section posterior */
+    z-index: 100; /* Para garantir que a imagem fique sobre os outros elementos */
+    text-align: right; /* Alinha a imagem à direita */
+    padding-right: 10px; /* Ajuste conforme necessário */
+}
+
+.rodape__img {
+    max-height: 306%;
+    width: auto;
 }
 
 .rodape__final {
@@ -599,17 +628,6 @@
     #testimonials, #services {
         max-width: 600px;
     }
-}
-
-/* Funcionalidade de carrossel com CSS */
-.btn__carrossel:first-child::before {
-    content: "<";
-    font-size: 20px;
-}
-
-.btn__carrossel:last-child::before {
-    content: ">";
-    font-size: 20px;
 }
 
 /* Estilo para botão Fale Conosco com ícone WhatsApp */
