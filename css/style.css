@@ -198,8 +198,8 @@
 }
 
 /* Planos */
-#plans {
-    padding: 50px 100px;
+.plans__divs__text{
+    margin: 90px;
 }
 
 .plans__principal {
@@ -208,25 +208,18 @@
     margin-top: 20px;
 }
 
-.plans__title1 {
+.plans__title1, .depoimentos__text{
     font-size: 36px;
     font-weight: 700;
     color: var(--tertiary-color);
     font-family: 'Inknut Antiqua', serif; /* Aplicando fonte Inknut Antiqua */
-    margin-bottom: 20px;
-}
-
-.plans__text1 {
-    font-size: 18px;
-    max-width: 800px;
-    margin: 0 auto;
 }
 
 .plans__divs {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
-    margin-bottom: 50px;
+  
 }
 
 .plans__primeiroPasso__2, .plans__segundoPasso {
@@ -294,9 +287,12 @@
     width: 100%;
     overflow-x: auto;
     scroll-behavior: smooth;
-    scrollbar-width: none; /* Firefox */
+    scrollbar-width: none;
     gap: 20px;
-    /* padding: 20px 0; */
+    padding: 0px;
+    margin: 80px ;
+    max-width: 1200px;
+    margin-bottom: 200px;
 }
 
 #plans__carrossel::-webkit-scrollbar {
@@ -408,19 +404,30 @@
 }
 
 /* Carrossel de Depoimentos */
+.depoimentos{
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 90px;
+}
+
+.depoimentos__text{
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--tertiary-color);
+    font-family: 'Inknut Antiqua', serif;
+}
+
 #testimonials {
     display: flex;
     align-items: center;
-    justify-content: center;
     position: relative;
     width: 100%;
     overflow-x: auto;
     scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
     gap: 20px;
-    padding: 50px 0;
-    margin: 0 auto;
+    padding: 0px;
+    margin: 80px ;
     max-width: 1200px;
 }
 
@@ -453,9 +460,10 @@
     scroll-behavior: smooth;
     scrollbar-width: none;
     gap: 20px;
-    padding: 90px 0;
-    margin: 20px ;
+    padding: 0px;
+    margin: 80px ;
     max-width: 1200px;
+    margin-bottom: 150px;
 }
 
 #services::-webkit-scrollbar {
@@ -467,7 +475,7 @@
     flex: 0 0 300px;
     min-width: 300px;
     background-color: var(--secondary-text-color);
-    padding: 25px;
+    padding: 5px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -491,7 +499,6 @@
 
 .services__1 ul li, .services__2 ul li, .services__3 ul li, .services__4 ul li,
 .services__5 ul li, .services__6 ul li, .services__7 ul li, .services__8 ul li {
-    padding-left: 15px;
     position: relative;
     margin-top: 5px;
 }
@@ -519,6 +526,7 @@
     padding: 50px 100px;
     background-color: var(--secondary-color);
     color: var(--primary-text-color);
+    margin-top: 200px;
 }
 
 .contact__logo img, .logo__rodape img {
@@ -549,11 +557,13 @@
     z-index: 100; /* Para garantir que a imagem fique sobre os outros elementos */
     text-align: right; /* Alinha a imagem à direita */
     padding-right: 10px; /* Ajuste conforme necessário */
+    margin-right: auto;
 }
 
 .rodape__img {
     max-height: 306%;
     width: auto;
+    margin-top: 200px;
 }
 
 .rodape__final {
@@ -567,73 +577,454 @@
     font-family: 'Jacques Francois', serif; /* Aplicando fonte Jacques Francois */
 }
 
-/* Responsividade */
-@media (max-width: 1024px) {
-    #header__banner {
-        padding: 20px 50px;
-    }
-    
-    #header__texto {
-        margin: 60px 100px;
-    }
-    
-    #information {
-        grid-template-columns: repeat(2, 1fr);
-        padding: 40px 50px;
-    }
-    
-    #plans__div {
-        padding: 40px 50px;
-    }
-    
-    #contact {
-        grid-template-columns: repeat(2, 1fr);
-        padding: 40px 50px;
-    }
-
-    #testimonials, #services {
-        max-width: 900px;
-    }
-}
-
-@media (max-width: 768px) {
-    .navbar {
-        display: none;
-    }
-    
-    #header__texto {
-        margin: 40px 50px;
-    }
-    
-    .header__title {
-        font-size: 36px;
-    }
-    
-    .header__sub_title {
-        font-size: 20px;
-    }
-    
-    #information {
-        grid-template-columns: 1fr;
-    }
-    
-    .plans__divs {
-        grid-template-columns: 1fr;
-    }
-    
-    #contact {
-        grid-template-columns: 1fr;
-    }
-
-    #testimonials, #services {
-        max-width: 600px;
-    }
-}
-
 /* Estilo para botão Fale Conosco com ícone WhatsApp */
 .btn_faleConosco::before {
     content: "";
     display: inline-block;
     width: 20px;
     height: 20px;
+}
+
+/* Menu Mobile */
+.mobile-menu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    z-index: 1000;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+}
+
+.mobile-menu-toggle .bar {
+    height: 3px;
+    width: 100%;
+    background-color: var(--primary-text-color);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .mobile-menu-toggle {
+        display: flex;
+    }
+    
+    .navbar {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 300px;
+        height: 100vh;
+        background-color: var(--main-color);
+        flex-direction: column;
+        align-items: center;
+        padding-top: 70px;
+        transition: right 0.3s ease;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+    }
+    
+    .navbar.active {
+        right: 0;
+    }
+    
+    .navbar a {
+        margin: 15px 0;
+        font-size: 18px;
+    }
+    
+    /* Quando o menu está aberto, transformar o ícone em X */
+    .mobile-menu-toggle.active .bar:nth-child(1) {
+        transform: translateY(11px) rotate(45deg);
+    }
+    
+    .mobile-menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .mobile-menu-toggle.active .bar:nth-child(3) {
+        transform: translateY(-11px) rotate(-45deg);
+    }
+    
+    /* Adicionar overlay quando o menu está aberto */
+    .menu-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 998;
+    }
+    
+    .menu-overlay.active {
+        display: block;
+    }
+}
+
+/* Responsividade */
+
+/* Responsividade para todos os dispositivos */
+
+/* Tablets e dispositivos menores */
+@media screen and (max-width: 992px) {
+    /* Header e banner */
+    #header__banner {
+        padding: 20px 50px;
+    }
+    
+    #header__texto {
+        margin: 60px 50px;
+    }
+    
+    .header__title {
+        font-size: 38px;
+    }
+    
+    .header__sub_title {
+        font-size: 20px;
+    }
+    
+    /* Quem somos */
+    #information {
+        grid-template-columns: 1fr 1fr;
+        padding: 40px 50px;
+    }
+    
+    .information__text3 {
+        grid-column: span 2;
+    }
+    
+    /* Liberdade para viajar */
+    .message__title {
+        font-size: 32px;
+    }
+    
+    /* Planos */
+    .plans__divs__text {
+        margin: 60px 50px;
+    }
+    
+    .plans__title1, .depoimentos__text {
+        font-size: 32px;
+    }
+    
+    /* Carrossel */
+    #plans__carrossel,
+    #testimonials,
+    #services {
+        margin: 60px 20px;
+    }
+    
+    /* Rodapé */
+    #contact {
+        grid-template-columns: 1fr 1fr;
+        padding: 40px 50px;
+        gap: 20px;
+    }
+    
+    .contact__logo {
+        grid-column: span 2;
+        text-align: center;
+    }
+    
+    .rodape__img__container {
+        height: 100px;
+        margin-top: -50px;
+        margin-bottom: -50px;
+    }
+    
+    .rodape__img {
+        max-height: 200%;
+    }
+}
+
+/* Dispositivos móveis grandes */
+@media screen and (max-width: 768px) {
+    /* Header e banner */
+    #header {
+        min-height: 60vh;
+        height: 450px;
+    }
+    
+    #header__banner {
+        padding: 15px 20px;
+    }
+    
+    .header__logo img {
+        height: 60px;
+    }
+    
+    #header__texto {
+        margin: 40px 20px;
+    }
+    
+    .header__title {
+        font-size: 32px;
+    }
+    
+    .header__sub_title {
+        font-size: 18px;
+    }
+    
+    /* Quem somos */
+    #information {
+        grid-template-columns: 1fr;
+        padding: 30px 20px;
+    }
+    
+    .information__text1, .information__text2, .information__text3 {
+        grid-column: 1;
+    }
+    
+    /* Liberdade para viajar */
+    #message {
+        padding: 60px 20px;
+    }
+    
+    .message__title {
+        font-size: 28px;
+        text-align: center;
+    }
+    
+    .message__subTitle {
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    /* Planos */
+    .plans__divs__text {
+        margin: 40px 20px;
+    }
+    
+    .plans__divs {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .plans__title1, .depoimentos__text {
+        font-size: 28px;
+    }
+    
+    .plans__text1 {
+        font-size: 16px;
+    }
+    
+    /* Carrosséis */
+    #plans__carrossel,
+    #testimonials,
+    #services {
+        margin: 40px 0;
+        padding: 0 10px;
+    }
+    
+    .carrossel__1, .carrossel__2, .carrossel__3, .carrossel__4,
+    .carrossel__5, .carrossel__6, .carrossel__7, .carrossel__8,
+    .services__1, .services__2, .services__3, .services__4,
+    .services__5, .services__6, .services__7, .services__8 {
+        min-width: 260px;
+        padding: 20px;
+    }
+    
+    /* Botões do carrossel */
+    .btn__carrossel {
+        width: 35px;
+        height: 35px;
+    }
+    
+    /* Rodapé */
+    #contact {
+        grid-template-columns: 1fr;
+        padding: 30px 20px;
+    }
+    
+    .contact__logo, .atendimento, .funcionamento {
+        grid-column: 1;
+        text-align: center;
+    }
+    
+    .btn_faleConosco, .btn__faleConosco {
+        margin: 0 auto;
+        display: flex;
+    }
+    
+    .rodape__img__container {
+        display: none; /* Ocultar imagem em telas pequenas para melhor visualização */
+    }
+}
+
+/* Dispositivos móveis pequenos */
+@media screen and (max-width: 480px) {
+    /* Header e banner */
+    #header {
+        height: 400px;
+    }
+    
+    .header__logo img {
+        height: 50px;
+    }
+    
+    #header__texto {
+        margin: 30px 15px;
+    }
+    
+    .header__title {
+        font-size: 28px;
+    }
+    
+    .header__sub_title {
+        font-size: 16px;
+    }
+    
+    .btn_faleConosco, .btn__faleConosco {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+    .whatsapp-icon {
+        width: 24px;
+        height: 24px;
+    }
+    
+    /* Quem somos */
+    #information {
+        padding: 25px 15px;
+    }
+    
+    .information__titulo1, .information__titulo2, .information__titulo3 {
+        font-size: 20px;
+    }
+    
+    /* Liberdade para viajar */
+    #message {
+        padding: 40px 15px;
+    }
+    
+    .message__title {
+        font-size: 24px;
+    }
+    
+    .message__subTitle {
+        font-size: 16px;
+    }
+    
+    /* Planos */
+    .plans__divs__text {
+        margin: 30px 15px;
+    }
+    
+    .plans__title1, .depoimentos__text {
+        font-size: 24px;
+    }
+    
+    .plans__text1 {
+        font-size: 14px;
+    }
+    
+    /* Carrosséis */
+    .carrossel__1, .carrossel__2, .carrossel__3, .carrossel__4,
+    .carrossel__5, .carrossel__6, .carrossel__7, .carrossel__8,
+    .services__1, .services__2, .services__3, .services__4,
+    .services__5, .services__6, .services__7, .services__8 {
+        min-width: 220px;
+        padding: 15px;
+        height: auto;
+        min-height: 420px;
+    }
+    
+    .carrossel__title1, .carrossel__title2, .carrossel__title3, .carrossel__title4,
+    .carrossel__title5, .carrossel__title6, .carrossel__title7, .carrossel__title8 {
+        font-size: 18px;
+    }
+    
+    .carrossel__subTitle1, .carrossel__subTitle2, .carrossel__subTitle3, .carrossel__subTitle4,
+    .carrossel__subTitle5, .carrossel__subTitle6, .carrossel__subTitle7, .carrossel__subTitle8 {
+        font-size: 13px;
+    }
+    
+    .carrossel__subTitle1_1 li, .carrossel__subTitle2_1 li, .carrossel__subTitle3_1 li, .carrossel__subTitle4_1 li,
+    .carrossel__subTitle5_1 li, .carrossel__subTitle6_1 li, .carrossel__subTitle7_1 li, .carrossel__subTitle8_1 li {
+        font-size: 13px;
+    }
+    
+    .services__1 ul p, .services__2 ul p, .services__3 ul p, .services__4 ul p,
+    .services__5 ul p, .services__6 ul p, .services__7 ul p, .services__8 ul p {
+        font-size: 18px;
+    }
+    
+    .services__1 ul li, .services__2 ul li, .services__3 ul li, .services__4 ul li,
+    .services__5 ul li, .services__6 ul li, .services__7 ul li, .services__8 ul li {
+        font-size: 13px;
+    }
+    
+    /* Botões do carrossel */
+    .btn__carrossel {
+        width: 30px;
+        height: 30px;
+    }
+    
+    /* Rodapé */
+    .atendimento strong, .funcionamento strong {
+        font-size: 16px;
+    }
+    
+    .atendimento p, .funcionamento p {
+        font-size: 14px;
+    }
+    
+    .rodape__final__text {
+        font-size: 12px;
+    }
+}
+
+/* Fix para o carrossel no mobile */
+@media screen and (max-width: 600px) {
+    /* Ajustes para o carrossel em telas bem pequenas */
+    #plans__carrossel__wrapper .btn__carrossel[aria-label="Anterior"],
+    #plans__carrossel__wrapper .btn__carrossel[aria-label="Próximo"] {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    #plans__carrossel__wrapper .btn__carrossel[aria-label="Anterior"] {
+        left: 0px;
+    }
+    
+    #plans__carrossel__wrapper .btn__carrossel[aria-label="Próximo"] {
+        right: 0px;
+    }
+    
+    /* Ajuste da visualização inicial dos carrosséis para centralizar melhor o primeiro item em mobile */
+    #plans__carrossel, #testimonials, #services {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+/* Orientação paisagem em dispositivos móveis */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    #header {
+        min-height: 90vh;
+    }
+    
+    .header__title {
+        font-size: 28px;
+    }
+    
+    #header__texto {
+        margin: 20px 50px;
+    }
+    
+    /* Ajustes para que o conteúdo permaneça visível em paisagem */
+    .carrossel__1, .carrossel__2, .carrossel__3, .carrossel__4,
+    .carrossel__5, .carrossel__6, .carrossel__7, .carrossel__8,
+    .services__1, .services__2, .services__3, .services__4,
+    .services__5, .services__6, .services__7, .services__8 {
+        height: auto;
+        min-height: 320px;
+    }
 }
