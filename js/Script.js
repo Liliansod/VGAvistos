@@ -121,10 +121,6 @@ function setupSaibaMaisButtons() {
     });
 }
 
-
-
-
-
 // Função para lidar com o redimensionamento da janela
 function handleResize() {
     adjustCarouselButtons('plans__carrossel');

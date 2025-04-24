@@ -211,11 +211,12 @@
     margin-top: 20px;
 }
 
-.plans__title1, .depoimentos__text{
+#plans__title1, .depoimentos__text{
     font-size: 36px;
     font-weight: 700;
     color: var(--tertiary-color);
     font-family: 'Inknut Antiqua', serif; /* Aplicando fonte Inknut Antiqua */
+    margin-top: 150px;
 }
 
 .plans__divs {
@@ -415,8 +416,7 @@
     font-size: 36px;
     font-weight: 700;
     color: var(--tertiary-color);
-    font-family: 'Inknut Antiqua', serif;
-    margin-left: 460px;
+    margin-left: 560px;
 }
 
 #testimonials {
@@ -712,7 +712,7 @@
         margin: 60px 50px;
     }
     
-    .plans__title1, .depoimentos__text {
+    #plans__title1, .depoimentos__text {
         font-size: 32px;
     }
     
@@ -809,7 +809,7 @@
         gap: 20px;
     }
     
-    .plans__title1, .depoimentos__text {
+    #plans__title1, .depoimentos__text {
         font-size: 28px;
     }
     
@@ -920,7 +920,7 @@
         margin: 30px 15px;
     }
     
-    .plans__title1, .depoimentos__text {
+    #plans__title1, .depoimentos__text {
         font-size: 24px;
     }
     
