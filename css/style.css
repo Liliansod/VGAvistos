@@ -47,12 +47,15 @@
 }
 
 .header__logo img {
+    margin-left: 100px;
     height: 80px;
 }
 
 .navbar {
     display: flex;
     gap: 15px;
+    margin-left: 350px;
+    margin-right: -90px;
 }
 
 .navbar a {
