@@ -25,6 +25,11 @@
 
 /* Importação das novas fontes */
 @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Jacques+Francois&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tagesschrift&display=swap');
+
+
 
 /* Cabeçalho e banner */
 #header {
@@ -93,7 +98,7 @@
     margin-left: -10px;
     margin-bottom: 5px;
     color: var(--secondary-bg-color);
-    font-family: 'Inknut Antiqua', serif; 
+    font-family: "Merriweather", serif;
 }
 
 .header__sub_title {
@@ -102,6 +107,7 @@
     color: var(--primary-text-color);
     margin-left: -30px;
     margin-bottom: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .header__subsub_title {
     font-size: 25px;
@@ -109,12 +115,14 @@
     color: var(--primary-text-color);
     margin-bottom: 5px;
     margin-left: -20px;
+    font-family: 'Montserrat';
 }
 .header__sub_ti {
     font-size: 20px;
     font-weight: 400;
     color: var(--primary-text-color);
     margin-left: -103px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .btn_faleConosco, .btn__faleConosco {
     background-color: var(--button-color);
