@@ -1,0 +1,46 @@
+/* Carrossel de Depoimentos */
+.depoimentos{
+    margin-bottom: 0px;
+    margin-top: 90px;
+}
+
+.depoimentos__text{
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--tertiary-color);
+    margin-left: 560px;
+}
+
+#testimonials {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    gap: 20px;
+    padding: 0px;
+    margin: 140px ;
+    max-width: 1200px;
+    margin-top: 50px;
+}
+
+#testimonials::-webkit-scrollbar {
+    display: none;
+}
+
+.testimonials__img1, .testimonials__img2, .testimonials__img3, .testimonials__img4,
+.testimonials__img5, .testimonials__img6, .testimonials__img7, .testimonials__img8 {
+    flex: 0 0 300px;
+    min-width: 300px;
+    transition: transform 0.3s;
+}
+
+.testimonials__img1 img, .testimonials__img2 img, .testimonials__img3 img, .testimonials__img4 img,
+.testimonials__img5 img, .testimonials__img6 img, .testimonials__img7 img, .testimonials__img8 img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}

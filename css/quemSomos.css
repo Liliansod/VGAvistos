@@ -1,0 +1,36 @@
+/* Quem somos */
+#information {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 50px 100px;
+    background-color: var(--light-accent);
+}
+
+.information__text1, .information__text2, .information__text3 {
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.information__titulo1, .information__titulo2, .information__titulo3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: var(--tertiary-color);
+    font-family: 'Inknut Antiqua', serif; /* Aplicando fonte Inknut Antiqua nos títulos das seções */
+}
+
+.information__descricao1, .information__descricao2 {
+    line-height: 1.6;
+    color: var(--primary-text-color);
+}
+
+.information__descricao3 {
+    list-style-position: inside;
+    line-height: 1.8;
+    padding-left: 10px;
+}
+
+.information__descricao3 li {
+    margin-bottom: 8px;
+}

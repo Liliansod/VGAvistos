@@ -1,0 +1,220 @@
+/* Carrossel de Planos */
+.carrossel__wrapper {
+    padding: 0 0px; /* Ou o mesmo padding lateral usado em outras seções */
+    position: relative;
+}
+#plans__carrossel__wrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 0 60px;
+}
+
+#plans__carrossel__wrapper .btn__carrossel {
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+
+#plans__carrossel__wrapper .btn__carrossel[aria-label="Anterior"] {
+    left: -20px; /* fora da div */
+}
+
+#plans__carrossel__wrapper .btn__carrossel[aria-label="Próximo"] {
+    right: -20px; /* fora da div */
+}
+
+
+#plans__carrossel {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    gap: 20px;
+    padding: 0px;
+    margin: 140px ;
+    max-width: 1200px;
+}
+
+#plans__carrossel::-webkit-scrollbar {
+    display: none; /* Chrome, Safari e Opera */
+}
+
+.btn__carrossel {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--button-color);
+    color: var(--secondary-text-color);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carrossel__1, .carrossel__2, .carrossel__3, .carrossel__4,
+.carrossel__5, .carrossel__6, .carrossel__7, .carrossel__8 {
+    flex: 0 0 300px;
+    min-width: 300px;
+    background-color: var(--secondary-text-color);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    height: 420px;
+    justify-content: space-between;
+}
+
+.carrossel__1:hover, .carrossel__2:hover, .carrossel__3:hover, .carrossel__4:hover,
+.carrossel__5:hover, .carrossel__6:hover, .carrossel__7:hover, .carrossel__8:hover {
+    transform: translateY(-5px);
+}
+
+.carrossel__title1, .carrossel__title2, .carrossel__title3, .carrossel__title4,
+.carrossel__title5, .carrossel__title6, .carrossel__title7, .carrossel__title8 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: var(--tertiary-color);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Inknut Antiqua', serif; /* Aplicando fonte Inknut Antiqua */
+}
+
+.carrossel__subTitle1, .carrossel__subTitle2, .carrossel__subTitle3, .carrossel__subTitle4,
+.carrossel__subTitle5, .carrossel__subTitle6, .carrossel__subTitle7, .carrossel__subTitle8,
+.carrossel__subTitle8__ingles {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.carrossel__subTitle1_1, .carrossel__subTitle2_1, .carrossel__subTitle3_1, .carrossel__subTitle4_1,
+.carrossel__subTitle5_1, .carrossel__subTitle6_1, .carrossel__subTitle7_1, .carrossel__subTitle8_1 {
+    margin-bottom: 20px;
+    list-style-type: none;
+}
+
+.carrossel__subTitle1_1 p, .carrossel__subTitle2_1 p, .carrossel__subTitle3_1 p, .carrossel__subTitle4_1 p,
+.carrossel__subTitle5_1 p, .carrossel__subTitle6_1 p, .carrossel__subTitle7_1 p, .carrossel__subTitle8_1 p {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.carrossel__subTitle1_1 li, .carrossel__subTitle2_1 li, .carrossel__subTitle3_1 li, .carrossel__subTitle4_1 li,
+.carrossel__subTitle5_1 li, .carrossel__subTitle6_1 li, .carrossel__subTitle7_1 li, .carrossel__subTitle8_1 li {
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 5px;
+}
+
+.carrossel__subTitle1_1 li::before, .carrossel__subTitle2_1 li::before, .carrossel__subTitle3_1 li::before, .carrossel__subTitle4_1 li::before,
+.carrossel__subTitle5_1 li::before, .carrossel__subTitle6_1 li::before, .carrossel__subTitle7_1 li::before, .carrossel__subTitle8_1 li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--tertiary-color);
+}
+
+.saibaMais {
+    background-color: var(--button-color);
+    color: var(--secondary-text-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+
+.saibaMais:hover {
+    background-color: var(--tertiary-color);
+}
+
+
+
+
+
+/* Carrossel de Serviços */
+#services {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    gap: 20px;
+    padding: 0px;
+    margin: 140px ;
+    max-width: 1200px;
+    margin-bottom: 150px;
+    margin-top: 50px;
+}
+
+#services::-webkit-scrollbar {
+    display: none;
+}
+
+.services__1, .services__2, .services__3, .services__4,
+.services__5, .services__6, .services__7, .services__8 {
+    flex: 0 0 300px;
+    min-width: 300px;
+    background-color: var(--secondary-text-color);
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 290px;
+}
+
+.services__1 ul, .services__2 ul, .services__3 ul, .services__4 ul,
+.services__5 ul, .services__6 ul, .services__7 ul, .services__8 ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+.services__1 ul p, .services__2 ul p, .services__3 ul p, .services__4 ul p,
+.services__5 ul p, .services__6 ul p, .services__7 ul p, .services__8 ul p {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--tertiary-color);
+    font-family: 'Inknut Antiqua', serif; /* Aplicando fonte Inknut Antiqua */
+}
+
+.services__1 ul li, .services__2 ul li, .services__3 ul li, .services__4 ul li,
+.services__5 ul li, .services__6 ul li, .services__7 ul li, .services__8 ul li {
+    position: relative;
+    margin-top: 5px;
+}
+
+.services__1 ul li::before, .services__2 ul li::before, .services__3 ul li::before, .services__4 ul li::before,
+.services__5 ul li::before, .services__6 ul li::before, .services__7 ul li::before, .services__8 ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--tertiary-color);
+}
+
+.services__1 .btn_faleConosco, .services__2 .btn_faleConosco, .services__3 .btn_faleConosco, 
+.services__4 .btn_faleConosco, .services__5 .btn_faleConosco, .services__6 .btn_faleConosco, 
+.services__7 .btn_faleConosco, .services__8 .btn_faleConosco {
+    align-self: center;
+    margin-top: auto;
+}
